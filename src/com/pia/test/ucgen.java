@@ -7,13 +7,16 @@ public class ucgen {
 
 	public static void main(String[] args) {
 		int yks = 0;
+		Scanner input = new Scanner(System.in);
+		System.out.println("yükseklik belirle:");
+		yks = input.nextInt();
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("yükseklik belirle:");
 		yks = input.nextInt();
-		int bos=50;
+		int bos=yks;
 		for (int i = 0; i < yks; i++) {
-			for (int j=50; j>= 0;j--) {
+			for (int j=bos; j>= 0;j--) {
 				System.out.print(" ");
 			}
 			for (int x = 0; x <=i; x++) {
@@ -22,6 +25,8 @@ public class ucgen {
 			System.out.println("");
 			bos--;
 		}
+		
+		
 
 		
 	}
