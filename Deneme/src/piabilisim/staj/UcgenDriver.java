@@ -11,7 +11,7 @@ public class UcgenDriver {
 		while (deger){
 		if (size<=2)
 		{
-			System.out.println("Aralik degerlerini kontrol ediniz...");
+			System.out.println("Yanlýþ deðer girdiniz tekrar deneyiniz !");
 			System.out.println("Enter size");
 			size=scanner.nextInt();
 			if (deger)
