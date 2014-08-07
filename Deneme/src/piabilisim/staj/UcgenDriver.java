@@ -9,12 +9,19 @@ public class UcgenDriver {
 		int size=scanner.nextInt();
 		boolean deger=true;
 		while (deger){
-		if (size<=0)
+		if (size<=2)
 		{
 			System.out.println("Aralik degerlerini kontrol ediniz...");
 			System.out.println("Enter size");
 			size=scanner.nextInt();
-			deger=false;
+			if (deger)
+			{
+				deger=true;
+			}
+			else
+			{
+				deger=false;
+			}
 		}
 		int bosluk=size;
 		for (int i = 0; i <size; i++) 
